@@ -45,10 +45,11 @@ export const business = {
   services: [
     { id: "volymfransar", name: "Volymfransar", description: "Den vanligaste typen idag — lite extra men inte för mycket.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
     { id: "singelfransar", name: "Singelfransar", description: "Naturligt resultat med mascara-effekt.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "megavolym", name: "Megavolym", description: "Festligare och intensivare look.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "microblading", name: "Microblading ögonbryn", description: "Permanent tatuering ögonbryn.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "quickfix", name: "Quickfix påfyllning", description: "Påfyllning inom 1 vecka efter nytt set.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "megavolym", name: "Megavolym", description: "Festligare och intensivare look.", duration: "—", priceFrom: 800, note: "Källa: Bokadirekt." },
+    { id: "microblading", name: "Microblading ögonbryn", description: "Permanent tatuering ögonbryn.", duration: "—", priceFrom: 2500, note: "Källa: Bokadirekt." },
+    { id: "quickfix", name: "Quickfix påfyllning", description: "Påfyllning inom 1 vecka efter nytt set.", duration: "—", priceFrom: 300, note: "Källa: Bokadirekt." },
   ],
+  logoImage: null as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-1.jpg",
   gallery: [
