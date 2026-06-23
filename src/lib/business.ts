@@ -1,29 +1,31 @@
 export const business = {
   name: "Somas Fransar",
-  tagline: "Lash & microblading in Gottsunda",
-  description: "Lash and microblading studio in Gottsunda run by stylist Soma Saadi.",
-  category: "Beauty",
+  tagline: "Fransförlängning & microblading i Gottsunda",
+  description:
+    "Fransstudio på Blomdahls väg 1 i Gottsunda — volymfransar, singelfransar, megavolym och microblading ögonbryn med Soma Saadi.",
+  category: "Fransstudio",
   address: {
     street: "Blomdahls väg 1",
     postalCode: "756 49",
     city: "Uppsala",
     country: "Sverige",
   },
-  phone: "073-336 99 00",
-  phoneLink: "tel:+46733369900",
-  email: null as string | null,
-  emailLink: null as string | null,
+  phone: "073-336 99 71",
+  phoneLink: "tel:+46733369971",
+  email: "soma_saadi@hotmail.com",
+  emailLink: "mailto:soma_saadi@hotmail.com",
   bookingUrl: "https://www.bokadirekt.se/places/somas-fransar-38130",
   bookingLabel: "Boka på Bokadirekt",
+  websiteUrl: null as string | null,
   facebookUrl: null as string | null,
   instagramUrl: null as string | null,
   owner: "Soma Saadi",
   rating: 4.7,
   reviewCount: 29,
   foundedYear: null as number | null,
-  coordinates: { lat: 59.82, lng: 17.64 },
+  coordinates: { lat: 59.8113, lng: 17.6233 },
   hours: {
-    note: "Ring gärna innan besök.",
+    note: "Boka tid via Bokadirekt.",
     regular: [
       { day: "Måndag", hours: "10:00 – 17:00" },
       { day: "Tisdag", hours: "10:00 – 17:00" },
@@ -35,91 +37,72 @@ export const business = {
     ],
   },
   usps: [
-    {
-      title: "Certifierad behandling",
-      description: "Skönhetsbehandlingar med omsorg hos Somas Fransar.",
-    },
-    {
-      title: "Personlig service",
-      description: "Varje besök anpassas efter dina önskemål.",
-    },
-    {
-      title: "Populärt val",
-      description: "Starkt betyg med 29 recensioner.",
-    },
-    {
-      title: "Bekvämt läge",
-      description: "Finns på Blomdahls väg 1 i Uppsala.",
-    },
+    { title: "4,7 på Bokadirekt", description: "29 verifierade omdömen." },
+    { title: "Volym & singel", description: "Volym, singel och megavolym — enligt Bokadirekt." },
+    { title: "Microblading", description: "Permanent tatuering ögonbryn — enligt Bokadirekt." },
+    { title: "Gottsunda", description: "Blomdahls väg 1 i Uppsala." },
   ],
   services: [
-    {
-      id: "volymfransar",
-      name: "Volymfransar",
-      description: "Professionell volymfransar med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "singelfransar",
-      name: "Singelfransar",
-      description: "Professionell singelfransar med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "megavolym",
-      name: "Megavolym",
-      description: "Professionell megavolym med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "microblading-gonbryn",
-      name: "Microblading ögonbryn",
-      description: "Professionell microblading ögonbryn med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "quickfix-p-fyllning",
-      name: "Quickfix påfyllning",
-      description: "Professionell quickfix påfyllning med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
+    { id: "volymfransar", name: "Volymfransar", description: "Den vanligaste typen idag — lite extra men inte för mycket.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "singelfransar", name: "Singelfransar", description: "Naturligt resultat med mascara-effekt.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "megavolym", name: "Megavolym", description: "Festligare och intensivare look.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "microblading", name: "Microblading ögonbryn", description: "Permanent tatuering ögonbryn.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "quickfix", name: "Quickfix påfyllning", description: "Påfyllning inom 1 vecka efter nytt set.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
   ],
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-1.jpg",
+  gallery: [
+    { id: 1, label: "Volymfransar", image: "/images/hero.jpg" },
+    { id: 2, label: "Studio", image: "/images/gallery-1.jpg" },
+    { id: 3, label: "Resultat", image: "/images/gallery-2.jpg" },
+    { id: 4, label: "Fransar", image: "/images/gallery-3.jpg" },
+    { id: 5, label: "Behandling", image: "/images/gallery-4.jpg" },
+    { id: 6, label: "Atmosfär", image: "/images/gallery-5.jpg" },
+    { id: 7, label: "Styling", image: "/images/gallery-6.jpg" },
+  ],
+  about: {
+    headline: "Fransstudio i Gottsunda",
+    paragraphs: [
+      "Somas Fransar drivs av fransstylisten Soma Saadi på Blomdahls väg 1 i Uppsala.",
+      "Erbjuder volymfransar, singelfransar, megavolym, quickfix och microblading ögonbryn — boka via Bokadirekt.",
+    ],
+  },
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos Somas Fransar. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
-      rating: 5,
+      text: "Jag försökte nå henne genom att ringa, fick inget svar, fick vänta 30 min och ingen kom. Jag blev besviken då hon inte hörde  av sig.",
+      author: "Noor S.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/somas-fransar-38130",
+      rating: 2,
+      date: "2025-05-23",
     },
     {
-      text: "Rekommenderar Somas Fransar varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Bästa och trevligaste fransstylisten i Uppsala! Blir alltid så väl omhändertagen och fransarna håller så bra 🌟",
+      author: "Jessica J.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/somas-fransar-38130",
       rating: 5,
+      date: "2025-04-10",
+    },
+    {
+      text: "Älskar 👏🏾😍😍😍",
+      author: "Joyce M.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/somas-fransar-38130",
+      rating: 5,
+      date: "2024-12-23",
+    },
+    {
+      text: "Soma är en helt fantastisk fransstylist och person🌟 Fransarna håller så bra och jag rekommenderar henne verkligen! Har haft fransar i 10 år+ men aldrig haft så fina fransar som jag har nu 🤩🙏",
+      author: "Jessica J.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/somas-fransar-38130",
+      rating: 5,
+      date: "2024-11-12",
     },
   ],
-  seoKeywords: [
-    "fransförlängning Gottsunda",
-    "microblading Uppsala",
-    "fransar Uppsala",
-    "volymfransar Uppsala",
-  ],
-  brandColors: {
-    primary: "#8b4a6b",
-    secondary: "#e8b4bc",
-    accent: "#fdf6f8",
-    dark: "#5c2d42",
-  },
+  seoKeywords: ["fransförlängning Gottsunda", "microblading Uppsala", "Somas Fransar", "volymfransar Uppsala"],
+  brandColors: { primary: "#8b4a6b", secondary: "#e8b4bc", accent: "#fdf6f8", dark: "#5c2d42" },
 } as const;
 
 export function getFullAddress() {
@@ -128,11 +111,9 @@ export function getFullAddress() {
 }
 
 export function getMapsEmbedUrl() {
-  const query = encodeURIComponent(getFullAddress());
-  return `https://www.google.com/maps?q=${query}&output=embed`;
+  return `https://www.google.com/maps?q=${encodeURIComponent(getFullAddress())}&output=embed`;
 }
 
 export function getMapsLink() {
-  const query = encodeURIComponent(getFullAddress());
-  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getFullAddress())}`;
 }
