@@ -49,7 +49,7 @@ export const business = {
     { id: "microblading", name: "Microblading ögonbryn", description: "Permanent tatuering ögonbryn.", duration: "—", priceFrom: 2500, note: "Källa: Bokadirekt." },
     { id: "quickfix", name: "Quickfix påfyllning", description: "Påfyllning inom 1 vecka efter nytt set.", duration: "—", priceFrom: 300, note: "Källa: Bokadirekt." },
   ],
-  logoImage: null as string | null,
+  logoImage: "/images/logo.jpg" as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-1.jpg",
   gallery: [
